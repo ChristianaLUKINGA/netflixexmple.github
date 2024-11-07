@@ -1,0 +1,147 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black
+}
+.leanding{
+    margin-top: -35px;
+    padding: 0px;
+    height: 100vh;
+    background: url('assets/bg.jpg') no-repeat center center  ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* overlay au-dessus de l'image de fond */
+}
+.content { 
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2; /* contenu au-dessus de l'overlay */
+    padding-top: 250px;
+}
+.logo {
+    position: absolute;  
+    top: 50px;             
+    left: 150px;           
+    width: 150px;       
+    height: auto;      
+    z-index: 2;      
+}
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+.p1, .p2 {
+    font-size: 1.2em;
+}
+.p3 {
+    margin-top: 50px; 
+    margin-left:230px;
+    font-size: 1.5em;
+    text-align: left;
+    left: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.cta-button {
+    position: absolute; 
+    right: 100px;       
+    top: 50px;         
+    padding: 10px 20px; 
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;  
+    cursor: pointer;
+    z-index: 2;
+}
+.cta-button:hover {
+    background-color: #f6121c; 
+}
+.secondary-button {
+   
+    margin: 20px auto 0;
+    right: 120px;       
+    padding: 10px 20px; 
+    background-color: #e50914;
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer; 
+    z-index: 2;    
+}
+.secondary-button:hover {
+    background-color: #f6121c; /* Couleur au survol */
+}
+.email-input {
+    padding: 10px;
+    font-size: 1em; 
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;  
+    width: 250px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+.Trending-input{
+    margin-top: -10px; /* Ajoute un espace au-dessus de l'input */
+    margin-left: 220px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1em;  
+    cursor: pointer;
+    width: 100%; /* Rendre l'input responsive */
+    max-width: 250px; /* Largeur maximale */
+    z-index: 10;
+}  
+.image1{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.image1 img{
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3ms ease;
+    position: relative;
+}
+
+.image1 img:hover {
+    background-color: rgba(0, 0, 0,0.5);
+    transform: translateY(-10px);  
+} 
+.image-number{
+    position: absolute;
+    top:60px;
+    left: -20px;
+    color: black;  
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 9em;
+} 
